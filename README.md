@@ -19,8 +19,10 @@ design está documentada em [`SPECS.md`](./SPECS.md); as regras de implementaç�
 │  ├─ js/main.js                # tema, menu mobile, link ativo, animações
 │  └─ img/favicon.svg           # ícone (também usado no cabeçalho)
 ├─ .github/workflows/deploy.yml # deploy automático no GitHub Pages
+├─ scripts/check.sh             # verificações automáticas
 ├─ AGENTS.md                    # instruções de trabalho (design + código)
 ├─ SPECS.md                     # especificação do produto
+├─ TODO.md                      # roteiro executável de tarefas e testes
 └─ .gitignore
 ```
 
@@ -43,6 +45,16 @@ python3 -m http.server 8000
 ```
 
 Depois acesse http://localhost:8000
+
+## Verificações
+
+```sh
+bash scripts/check.sh
+```
+
+Valida estrutura, metadados, acessibilidade estática, âncoras, arquivos referenciados, peso e
+configuração de deploy. Sai com código `0` quando está tudo certo. O roteiro completo de tarefas
+e testes manuais está em [`TODO.md`](./TODO.md).
 
 ## Deploy
 

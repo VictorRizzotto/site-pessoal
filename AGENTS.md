@@ -62,7 +62,9 @@ Alvo: **WCAG 2.2 nível AA**.
 - **HTML**: semântico, indentação de 2 espaços, atributos em ordem lógica, comentários só onde
   não é óbvio.
 - **CSS**: variáveis em `:root` para todo valor reutilizável (cor, espaço, raio, sombra).
-  Nomenclatura por componente, sem `!important`, sem seletores de ID para estilo.
+  Nomenclatura por componente, sem `!important` (única exceção: o bloco
+  `@media (prefers-reduced-motion: reduce)`, onde é necessário para vencer as transições
+  declaradas), sem seletores de ID para estilo.
   Ordem: reset → tokens → base → layout → componentes → utilitários → responsivo → preferências.
 - **JS**: progressivo — o site precisa funcionar com JS desabilitado. Um único arquivo, IIFE,
   sem `innerHTML` com dados externos, `defer` no carregamento.
@@ -118,7 +120,9 @@ assets/css/style.css            estilos e tokens
 assets/js/main.js               comportamento progressivo
 assets/img/                     imagens e favicon
 .github/workflows/deploy.yml    deploy no GitHub Pages
+scripts/check.sh                verificações automáticas
 SPECS.md                        especificação do projeto
+TODO.md                         roteiro executável de tarefas e testes
 AGENTS.md                       este arquivo
 ```
 

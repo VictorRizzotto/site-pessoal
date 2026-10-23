@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Victor Rizzotto — Desenvolvedor</title>
+    <title>Victor Rizzotto — Desenvolvedor web em formação</title>
     <meta
       name="description"
-      content="Site pessoal de Victor Rizzotto, desenvolvedor focado em web: interfaces rápidas, acessíveis e bem construídas."
+      content="Victor Rizzotto, estudante de Ciência da Computação na Atitus. Construo aplicações web com React e TypeScript. Disponível para estágio remoto ou híbrido."
     />
     <meta name="author" content="Victor Rizzotto" />
     <meta name="theme-color" content="#0b0e14" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#fbfcfe" media="(prefers-color-scheme: light)" />
 
+    <link rel="canonical" href="https://victorrizzotto.github.io/site-pessoal/" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Victor Rizzotto — Desenvolvedor" />
+    <meta property="og:site_name" content="Victor Rizzotto" />
+    <meta property="og:url" content="https://victorrizzotto.github.io/site-pessoal/" />
+    <meta property="og:title" content="Victor Rizzotto — Desenvolvedor web em formação" />
     <meta
       property="og:description"
-      content="Site pessoal de Victor Rizzotto, desenvolvedor focado em web: interfaces rápidas, acessíveis e bem construídas."
+      content="Estudante de Ciência da Computação na Atitus. Construo aplicações web com React e TypeScript. Disponível para estágio remoto ou híbrido."
     />
     <meta property="og:locale" content="pt_BR" />
 
@@ -40,8 +44,8 @@
 
     <header class="site-header">
       <div class="wrap header-inner">
-        <a class="brand" href="#inicio" aria-label="Victor Rizzotto">
-          <span class="brand-mark" aria-hidden="true">VR</span>
+        <a class="brand" href="#inicio">
+          <img class="brand-mark" src="assets/img/favicon.svg" alt="" width="32" height="32" />
           <span class="brand-text">Victor Rizzotto</span>
         </a>
 
@@ -59,6 +63,7 @@
           <ul class="nav-list" id="menu-principal">
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
@@ -80,11 +85,15 @@
     <main id="conteudo">
       <section class="hero" id="inicio">
         <div class="wrap hero-inner">
-          <p class="eyebrow">Olá, eu sou</p>
+          <p class="status">
+            <span class="status-dot" aria-hidden="true"></span>
+            Disponível para estágio
+          </p>
+
           <h1 class="hero-title">Victor Rizzotto</h1>
           <p class="hero-lead">
-            Desenvolvedor focado em web. Construo interfaces rápidas, acessíveis e fáceis de
-            manter — do primeiro rascunho ao deploy.
+            Estudante de Ciência da Computação na Atitus. Construo aplicações web com React e
+            TypeScript — e procuro um estágio em desenvolvimento, remoto ou híbrido.
           </p>
 
           <div class="hero-actions">
@@ -92,31 +101,41 @@
             <a class="btn btn-ghost" href="#contato">Falar comigo</a>
           </div>
 
-          <ul class="hero-meta" aria-label="Destaques">
-            <li><strong>Web</strong><span>HTML, CSS, JS</span></li>
-            <li><strong>Performance</strong><span>Core Web Vitals</span></li>
-            <li><strong>Acessibilidade</strong><span>WCAG</span></li>
-          </ul>
+          <dl class="hero-meta">
+            <div>
+              <dt>Formação</dt>
+              <dd>Ciência da Computação · Atitus</dd>
+            </div>
+            <div>
+              <dt>Previsão de formatura</dt>
+              <dd>2030</dd>
+            </div>
+            <div>
+              <dt>Base</dt>
+              <dd>Marau</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
       <section class="section" id="sobre">
         <div class="wrap">
           <header class="section-head">
-            <p class="section-kicker">Sobre</p>
+            <p class="section-kicker"><span class="kicker-num">01</span> Sobre</p>
             <h2 class="section-title">Quem está por trás do código</h2>
           </header>
 
           <div class="prose">
             <p>
-              Sou desenvolvedor e gosto de resolver problemas com clareza: menos camadas, menos
-              ruído, mais resultado. Meu foco é a experiência de quem usa — carregamento rápido,
-              navegação previsível e acessibilidade desde o início, não como um passo final.
+              Curso Ciência da Computação na Atitus e uso o tempo fora da aula para construir
+              produtos de verdade. O mais completo deles é o TapHub, uma plataforma SaaS com NFC
+              que ajuda negócios locais a compartilhar sua presença digital — do banco de dados
+              ao deploy.
             </p>
             <p>
-              Trabalho principalmente com a plataforma web, sem depender de frameworks quando o
-              problema não pede. Este site, por exemplo, é HTML, CSS e JavaScript puros,
-              publicados automaticamente no GitHub Pages.
+              No TapHub uso React, TypeScript, Tailwind CSS e Supabase. Quando o projeto pede algo
+              mais leve, vou de HTML, CSS e JavaScript puros, como neste site. Versiono com Git e
+              publico no GitHub, na Vercel e no GitHub Pages.
             </p>
           </div>
         </div>
@@ -125,20 +144,54 @@
       <section class="section" id="projetos">
         <div class="wrap">
           <header class="section-head">
-            <p class="section-kicker">Projetos</p>
+            <p class="section-kicker"><span class="kicker-num">02</span> Projetos</p>
             <h2 class="section-title">O que eu venho construindo</h2>
           </header>
 
           <ul class="cards">
             <li class="card">
               <div class="card-top">
-                <h3 class="card-title">Site pessoal</h3>
-                <p class="card-tag">HTML · CSS · JS</p>
+                <p class="card-tag">SaaS · Produto web</p>
+                <h3 class="card-title">TapHub</h3>
               </div>
               <p class="card-text">
-                Este site. Feito à mão, sem build, com tema claro/escuro e deploy contínuo via
-                GitHub Actions.
+                Plataforma que liga um display físico com NFC a um painel web, para negócios
+                locais compartilharem sua presença digital por aproximação ou QR Code. Cuidei do
+                produto inteiro: modelagem dos dados no Supabase, interface em React e deploy
+                contínuo na Vercel.
               </p>
+              <ul class="chips" aria-label="Tecnologias do projeto">
+                <li>React 19</li>
+                <li>TypeScript</li>
+                <li>Tailwind CSS</li>
+                <li>Supabase</li>
+                <li>Vercel</li>
+              </ul>
+              <a class="card-link" href="https://empresa-wheat.vercel.app" target="_blank" rel="noopener noreferrer">
+                Visitar o site
+                <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M4 12 12 4M6 4h6v6" />
+                </svg>
+                <span class="sr-only">(abre em nova aba)</span>
+              </a>
+            </li>
+
+            <li class="card">
+              <div class="card-top">
+                <p class="card-tag">Site · Código aberto</p>
+                <h3 class="card-title">Este site</h3>
+              </div>
+              <p class="card-text">
+                Portfólio em HTML, CSS e JavaScript puros: sem build, sem dependências e sem
+                framework. Tema claro e escuro, navegação por teclado e deploy automático a cada
+                push.
+              </p>
+              <ul class="chips" aria-label="Tecnologias do projeto">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub Actions</li>
+              </ul>
               <a
                 class="card-link"
                 href="https://github.com/VictorRizzotto/site-pessoal"
@@ -149,55 +202,78 @@
                 <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                   <path d="M4 12 12 4M6 4h6v6" />
                 </svg>
-              </a>
-            </li>
-
-            <!-- Edite ou remova os cards abaixo -->
-            <li class="card">
-              <div class="card-top">
-                <h3 class="card-title">Projeto em destaque</h3>
-                <p class="card-tag">A definir</p>
-              </div>
-              <p class="card-text">
-                Substitua por um projeto seu: qual problema resolvia, o que você construiu e qual
-                foi o resultado.
-              </p>
-              <a class="card-link" href="#contato">
-                Falar sobre
-                <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                  <path d="M4 12 12 4M6 4h6v6" />
-                </svg>
-              </a>
-            </li>
-
-            <li class="card">
-              <div class="card-top">
-                <h3 class="card-title">Experimentos</h3>
-                <p class="card-tag">A definir</p>
-              </div>
-              <p class="card-text">
-                Espaço para estudos, protótipos e coisas pequenas que valem ser mostradas.
-              </p>
-              <a class="card-link" href="#contato">
-                Falar sobre
-                <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                  <path d="M4 12 12 4M6 4h6v6" />
-                </svg>
+                <span class="sr-only">(abre em nova aba)</span>
               </a>
             </li>
           </ul>
         </div>
       </section>
 
+      <section class="section" id="experiencia">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="section-kicker"><span class="kicker-num">03</span> Experiência</p>
+            <h2 class="section-title">Formação e prática</h2>
+          </header>
+
+          <ol class="timeline">
+            <li class="timeline-item">
+              <p class="timeline-period">2026 — 2030</p>
+              <div class="timeline-body">
+                <h3 class="timeline-title">Ciência da Computação</h3>
+                <p class="timeline-org">Atitus · em andamento</p>
+                <p class="timeline-text">
+                  Graduação com previsão de conclusão em 2030. Base em algoritmos, estrutura de
+                  dados e engenharia de software.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-period">2026 — hoje</p>
+              <div class="timeline-body">
+                <h3 class="timeline-title">TapHub — produto próprio</h3>
+                <p class="timeline-org">Desenvolvimento full stack</p>
+                <p class="timeline-text">
+                  Construção completa de um SaaS com NFC: schema e políticas de acesso no
+                  Supabase, interface em React e TypeScript, publicação contínua na Vercel.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <p class="timeline-period">2026</p>
+              <div class="timeline-body">
+                <h3 class="timeline-title">Site pessoal</h3>
+                <p class="timeline-org">Design e front-end</p>
+                <p class="timeline-text">
+                  Projeto e implementação deste site, com foco em acessibilidade (WCAG 2.2 AA) e
+                  performance — Lighthouse 100 em acessibilidade, boas práticas e SEO.
+                </p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="availability">
+            <h3 class="availability-title">Buscando estágio em desenvolvimento</h3>
+            <p class="availability-text">
+              Remoto ou híbrido, com disponibilidade para conciliar com a graduação. Se o seu time
+              precisa de alguém que já colocou um produto no ar, vamos conversar.
+            </p>
+            <a class="btn btn-primary" href="#contato">Entrar em contato</a>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="contato">
         <div class="wrap">
           <header class="section-head">
-            <p class="section-kicker">Contato</p>
+            <p class="section-kicker"><span class="kicker-num">04</span> Contato</p>
             <h2 class="section-title">Vamos conversar</h2>
           </header>
 
           <p class="contact-lead">
-            Aberto a conversas sobre projetos, colaborações e ideias. Respondo assim que puder.
+            Aberto a conversas sobre estágio, projetos e colaborações. Respondo assim que puder.
           </p>
 
           <ul class="contact-list">

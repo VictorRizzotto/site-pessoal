@@ -104,7 +104,9 @@
 
   /* --- Animação de entrada ---------------------------------------------- */
   var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var animated = document.querySelectorAll(".section-head, .card, .prose, .contact-list");
+  var animated = document.querySelectorAll(
+    ".section-head, .card, .prose, .timeline-item, .availability, .contact-list"
+  );
 
   if (!prefersReduced && "IntersectionObserver" in window && animated.length) {
     var revealer = new IntersectionObserver(

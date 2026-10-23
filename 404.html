@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página não encontrada — Victor Rizzotto</title>
+    <meta name="robots" content="noindex" />
+    <base href="/site-pessoal/" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #fbfcfe;
+        --text: #0f172a;
+        --muted: #52606d;
+        --accent: #4f46e5;
+        --accent-2: #0ea5e9;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b0e14;
+          --text: #e6e9ef;
+          --muted: #9aa4b2;
+          --accent: #818cf8;
+          --accent-2: #38bdf8;
+        }
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+        background: var(--bg);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+        text-align: center;
+      }
+      .box {
+        max-width: 30rem;
+      }
+      .code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: clamp(4rem, 18vw, 7rem);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        background: linear-gradient(120deg, var(--text) 20%, var(--accent), var(--accent-2));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      h1 {
+        margin-top: 1rem;
+        font-size: 1.35rem;
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin-top: 0.6rem;
+        color: var(--muted);
+      }
+      a {
+        display: inline-block;
+        margin-top: 1.75rem;
+        padding: 0.7rem 1.4rem;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="box">
+      <p class="code">404</p>
+      <h1>Essa página não existe</h1>
+      <p>O endereço pode ter mudado ou nunca ter existido.</p>
+      <a href="index.html">Voltar para o início</a>
+    </main>
+  </body>
+</html>

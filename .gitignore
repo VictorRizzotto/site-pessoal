@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Artefato de build do workflow
+_site/
+
+# Editores
+.vscode/
+.idea/
+*.swp

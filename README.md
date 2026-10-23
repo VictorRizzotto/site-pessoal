@@ -39,6 +39,9 @@ Pages → Run workflow**.
 
 O Pages está configurado com **Source: GitHub Actions** (`build_type: workflow`).
 
+> **Se renomear o repositório:** o arquivo `404.html` usa `<base href="/site-pessoal/">` para
+> funcionar em qualquer subcaminho. Atualize esse valor para o novo nome do repositório.
+
 ## Como editar o conteúdo
 
 Tudo fica em `index.html`:
